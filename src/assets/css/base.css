@@ -1,0 +1,70 @@
+:root {
+    --h-color-neutral-0: #fff;
+    --h-color-neutral-50: #f8f9fa;
+    --h-color-neutral-100: #f5f5f6;
+    --h-color-neutral-200: #dedee2;
+    --h-color-neutral-300: #c6c6cc;
+    --h-color-neutral-400: #9d9ea4;
+    --h-color-neutral-500: #797980;
+    --h-color-neutral-600: #58585e;
+    --h-color-neutral-700: #36363b;
+    --h-color-neutral-800: #222225;
+    --h-color-neutral-900: #18181a;
+    --h-color-neutral-950: #101011;
+    --h-color-neutral-1000: #000;
+
+    --h-color-primary-50: #f5f6ff;
+    --h-color-primary-100: #e6e8ff;
+    --h-color-primary-200: #d9dbff;
+    --h-color-primary-300: #bcbdff;
+    --h-color-primary-400: #9d99ff;
+    --h-color-primary-500: #7b66ff;
+    --h-color-primary-600: #673de6;
+    --h-color-primary-700: #471ea7;
+    --h-color-primary-800: #331c74;
+    --h-color-primary-900: #251951;
+    --h-color-primary-950: #110c29;
+
+    --h-color-meteorite-50: #f5f5ff;
+    --h-color-meteorite-100: #eaeaff;
+    --h-color-meteorite-200: #cbc8ff;
+    --h-color-meteorite-300: #b6b2ff;
+    --h-color-meteorite-400: #a19bff;
+    --h-color-meteorite-500: #8c85ff;
+
+    --h-color-light-blue-50: #fafbff;
+    --h-color-light-blue-100: #f4f5ff;
+    --h-color-light-blue-200: #d5dfff;
+    --h-color-light-blue-300: #c3cce9;
+    --h-color-light-blue-400: #b0b9d4;
+    --h-color-light-blue-500: #888faa;
+
+    --h-color-neon-500: #cf0;
+    --h-color-neon-600: #bded00;
+
+    --h-color-peridot-500: #0f0;
+    --h-color-peridot-600: #20e052;
+
+    --h-color-warning-50: #fdf6e8;
+    --h-color-warning-100: #ffeec8;
+    --h-color-warning-200: #ffe399;
+    --h-color-warning-300: #ffd366;
+    --h-color-warning-400: #ffbf1a;
+    --h-color-warning-500: #e69800;
+    --h-color-warning-600: #c46c00;
+    --h-color-warning-700: #9b4600;
+    --h-color-warning-800: #6b2c00;
+    --h-color-warning-900: #4a1c00;
+
+    --h-color-primary-a0: #7b66ff00;
+    --h-color-primary-a2: #7b66ff05;
+    --h-color-primary-a5: #7b66ff0d;
+    --h-color-primary-a10: #7b66ff1a;
+    --h-color-primary-a15: #7b66ff26;
+    --h-color-primary-a20: #7b66ff33;
+    --h-color-primary-a25: #7b66ff40;
+    --h-color-primary-a50: #7b66ff80;
+    --h-color-primary-a75: #7b66ffbf;
+    --h-color-primary-a80: #7b66ffcc;
+    --h-color-primary-a90: #7b66ffe6;
+}

@@ -1,0 +1,194 @@
+.ask-ai-btn {
+    --border-size: 1px;
+
+    position: relative;
+    padding: 0px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+    transition: all 0.3s ease;
+}
+
+.ask-ai-btn:hover {
+    --border-size: 2px;
+}
+
+.ask-ai-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: var(--border-size);
+
+    background: linear-gradient(90deg,
+            #006eff,
+            #c6d5ee,
+            #e7e7f3,
+            #e0c1d4,
+            #00e5ff,
+            #8f48ec);
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    z-index: 0;
+    transition: all 0s ease;
+}
+
+.ask-ai-btn:hover::before {
+    background: conic-gradient(from var(--angle),
+            /* Azul */
+            #c2c2ff,
+            #bbbbff,
+            #b4b4ff,
+            #adadff,
+            #a6a6fe,
+            #9f9ffe,
+            #9898fd,
+            #9191fd,
+            #8a8afd,
+            #8383fc,
+            #7b7cfc,
+            #7375fc,
+            #6b6efc,
+            #6366fc,
+            #5b5ffc,
+            #5358fc,
+            #4b50fc,
+            #4348fc,
+            #3b42fc,
+            #343efc,
+            #303dfc,
+
+            /* Retorno do azul */
+            #343efc,
+            #3b42fc,
+            #4348fc,
+            #4b50fc,
+            #5358fc,
+            #5b5ffc,
+            #6366fc,
+            #6b6efc,
+            #7375fc,
+            #7b7cfc,
+            #8383fc,
+            #8a8afd,
+            #9191fd,
+            #9898fd,
+            #9f9ffe,
+            #a6a6fe,
+            #adadff,
+            #b4b4ff,
+            #bbbbff,
+            #c2c2ff,
+
+            /* Transição Azul → Lilás */
+            #c7befb,
+            #ccbaf7,
+            #d2b5f3,
+            #d8b1ef,
+            #deaceb,
+            #e4a8e7,
+            #e9a4e3,
+            #eea0df,
+
+            /* Rosa */
+            #f39cdb,
+            #f899d8,
+            #fc95d4,
+            #ff91d1,
+            #ff89cf,
+            #ff80cd,
+            #ff76cc,
+            #ff6bcb,
+            #ff5fcb,
+            #ff52cc,
+            #ff43ce,
+            #ff31d2,
+            #ff1bd7,
+            #ff00dd,
+
+            /* Retorno do rosa */
+            #ff1bd7,
+            #ff31d2,
+            #ff43ce,
+            #ff52cc,
+            #ff5fcb,
+            #ff6bcb,
+            #ff76cc,
+            #ff80cd,
+            #ff89cf,
+            #ff91d1,
+            #fc95d4,
+            #f899d8,
+            #f39cdb,
+
+            /* Transição Rosa → Azul */
+            #eea0df,
+            #e9a4e3,
+            #e4a8e7,
+            #deaceb,
+            #d8b1ef,
+            #d2b5f3,
+            #ccbaf7,
+            #c7befb,
+
+            /* Fecha */
+            #c2c2ff);
+    animation: spin 2s linear infinite;
+}
+
+.ask-ai-btn::after {
+    content: "";
+    position: absolute;
+    inset: var(--border-size);
+    border-radius: inherit;
+
+    background: linear-gradient(180deg,
+            #ffffff 0%,
+            #f0f8ff 20%,
+            #f8fbff 40%,
+            #ffffff 50%,
+            #fff8fc 60%,
+            #fff4fa 80%,
+            #ffffff 100%);
+
+    z-index: 1;
+    transition: all 0s;
+}
+
+.ask-ai-btn span {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    color: #111827;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    to {
+        --angle: 360deg;
+    }
+}
