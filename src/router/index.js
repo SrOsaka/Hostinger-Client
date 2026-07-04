@@ -6,7 +6,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory('/Hostinger-Client/'),
+    history: createWebHistory('import.meta.env.BASE_URL'),
     routes,
 })
 

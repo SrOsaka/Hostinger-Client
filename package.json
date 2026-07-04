@@ -1,11 +1,14 @@
 {
   "name": "hostinger-client",
+  "homepage": "https://SEU-USUARIO.github.io/Hostinger-Client/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +17,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.7",
+    "gh-pages": "^6.1.1",
     "vite": "^8.0.16",
     "vite-plugin-vue-devtools": "^8.1.2"
   },
