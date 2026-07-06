@@ -28,7 +28,7 @@
 
 .navbar .nav-link {
     color: var(--h-color-neutral-900);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     padding: 0;
     transition: none !important;
