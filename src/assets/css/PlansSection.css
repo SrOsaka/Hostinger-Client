@@ -1,0 +1,153 @@
+.plans-section-wrapper {
+    padding: 24px 80px 0;
+    background-color: var(--neutral--0);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.plans-and-prices {
+    position: relative;
+    z-index: 4;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 48px;
+
+    padding: 32px;
+    border-radius: 16px;
+
+    text-align: left;
+    text-decoration: none;
+
+    background-color: var(--h-color-primary-600);
+}
+
+.backgroundcardplans {
+    background-image: url("../backgroundcard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tittle-card,
+.plan-price-card,
+.try-for-free {
+    position: relative;
+    z-index: 2;
+
+    transition: transform .2s ease;
+}
+
+.tittle-card div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittle-card h1 {
+    margin: 0 0 8px;
+
+    font-size: 32px;
+    color: var(--h-color-neutral-50);
+}
+
+.tittle-card p {
+    margin: 0;
+
+    font-size: 16px;
+    color: var(--h-color-neutral-50);
+}
+
+.plan-price-card h1 {
+    margin: 0;
+
+    font-size: 16px;
+    color: var(--h-color-neutral-50);
+}
+
+.plan-price-card b {
+    font-size: 24px;
+}
+
+.try-for-free h1 {
+    margin: 0;
+
+    font-size: 24px;
+    color: var(--h-color-neutral-50);
+}
+
+.try-for-free p {
+    margin: 0;
+
+    font-size: 14px;
+    color: var(--h-color-neutral-200);
+}
+
+.OpenLinkIcon {
+    width: 32px;
+    height: 32px;
+
+    color: var(--h-color-neutral-50);
+
+    transition: transform .2s ease;
+}
+
+.plans-and-prices:hover .tittle-card,
+.plans-and-prices:hover .plan-price-card,
+.plans-and-prices:hover .try-for-free {
+    transform: scale(1.02);
+}
+
+.plans-and-prices:hover .OpenLinkIcon {
+    transform: translateX(4px) rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+    .plans-section-wrapper {
+        padding: 24px 40px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .plans-and-prices {
+        overflow: visible;
+    }
+}
+
+@media (max-width: 768px) {
+    .plans-section-wrapper {
+        padding: 24px 20px;
+    }
+
+    .plans-and-prices {
+        padding: 24px;
+    }
+
+    .plans-section-wrapper h1 {
+        font-size: 24px;
+    }
+
+    .plans-section-wrapper p {
+        padding-right: 10px;
+    }
+
+    .plans-section-wrapper p br {
+        display: none;
+    }
+
+    .plan-price-card h1 {
+        font-size: 16px;
+    }
+}
