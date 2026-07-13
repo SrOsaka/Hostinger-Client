@@ -7,6 +7,13 @@ import WbIcon from './icons/WbIcon.vue'
 import WordpressIcon from './icons/WordpressIcon.vue'
 import PlayTriangleIcon from './icons/PlayTriangleIcon.vue'
 
+import TechRadarLogo from './icons/TechRadarLogo.vue'
+import WirecutterLogo from './icons/WirecutterLogo.vue'
+import WiredLogo from './icons/WiredLogo.vue'
+import CnetLogo from './icons/CnetLogo.vue'
+import ForbesLogo from './icons/ForbesLogo.vue'
+import PcMagLogo from './icons/PcMagLogo.vue'
+
 const splide = ref(null)
 
 const options = {
@@ -16,21 +23,21 @@ const options = {
   focus: 'center',
   gap: '1rem',
   autoplay: true,
-  interval: 100000,
+  interval: 5000,
   pauseOnHover: false,
   pagination: false,
   arrows: false,
-  clones: 8,
-  updateOnMove: true,
+
+  drag: false,
+
   breakpoints: {
-    1024: {
+    991: {
+      drag: true,
       perPage: 2,
     },
     768: {
-      perPage: 1.2,
-    },
-    425: {
-      perPage: 1.1,
+      drag: true,
+      perPage: 1,
     },
   },
 }
@@ -221,6 +228,16 @@ onMounted(() => {
           </div>
         </SplideSlide>
       </Splide>
+  </div>
+  <div class="featured-logos__wrapper">
+    <div class="container">
+      <TechRadarLogo  />
+      <WirecutterLogo />
+      <WiredLogo />
+      <CnetLogo />
+      <ForbesLogo />
+      <PcMagLogo />
+    </div>
   </div>
 </template>
 
