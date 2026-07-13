@@ -29,6 +29,7 @@
 <template>
     <div class="container-fluid">
         <div class="home-page-wrapper">
+            <div class="container"></div>
             <div class="search-page-wrapper">
                 <div class="form-wrapper">
                     <div class="home-search">
@@ -59,7 +60,7 @@
                     <source :src="HomeVideo" type="video/mp4" />
                 </video>
 
-                <div class="home-video-overlay">
+                <div class="home-video-overlay container">
                     <h1>Your online success <br> starts here</h1>
                     <p>From launching a website to growing your business, Hostinger’s <br> got you covered.</p>
                     <button>Start now</button>
