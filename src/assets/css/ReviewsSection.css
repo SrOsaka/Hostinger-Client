@@ -156,6 +156,13 @@
     .reviews-wrapper {
         padding: 80px 0px;
     }
+
+    .person-card-wrapper {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -198,6 +205,6 @@
 
 @media (max-width: 375px) {
     .slide {
-        min-height: 464px;
+        min-height: 430px;
     }
 }
