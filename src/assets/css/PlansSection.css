@@ -112,9 +112,9 @@
     transform: translateX(4px) rotate(45deg);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     .plans-section-wrapper {
-        padding: 24px 40px 0px;
+        padding: 24px 30px 0px;
     }
 
     .row {
@@ -127,12 +127,13 @@
 }
 
 @media (max-width: 768px) {
-    .plans-section-wrapper {
-        padding: 24px 20px 0px;
-    }
 
     .plans-and-prices {
         padding: 24px;
+    }
+
+    .row {
+        padding: 0px;
     }
 
     .plans-section-wrapper h1 {

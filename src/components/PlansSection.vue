@@ -3,7 +3,7 @@
 </script>
 <template>
     <div class="plans-section-wrapper">
-        <div class="container text-center">
+        <div class=" text-center">
             <div class="row">
                 <a href="" class="col plans-and-prices background-card-plans ">
                     <div class="tittle-card">

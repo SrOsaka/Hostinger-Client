@@ -24,7 +24,7 @@ const options = {
   gap: '1rem',
   autoplay: true,
   interval: 5000,
-  pauseOnHover: false,
+  pauseOnHover: true,
   pagination: false,
   arrows: false,
 
@@ -38,6 +38,7 @@ const options = {
     768: {
       drag: true,
       perPage: 1,
+      pagination: true,
     },
   },
 }

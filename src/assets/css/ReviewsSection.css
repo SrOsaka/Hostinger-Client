@@ -72,6 +72,16 @@
     cursor: default;
 }
 
+.splide__pagination__page.is-active {
+    background: #0026ff !important;
+    transform: scale(1.4);
+    z-index: 1;
+}
+
+.splide__pagination {
+    padding-top: 40px;
+}
+
 .splide__slide.is-active h1,
 .splide__slide.is-active h2,
 .splide__slide.is-active h3,
@@ -231,6 +241,7 @@
 
     .slide {
         padding: 24px;
+        margin-bottom: 80px;
 
         .person-card-wrapper {
             flex-direction: column;
