@@ -3,24 +3,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #fff;
     gap: 16px;
-    padding: 104px 30px 0px;
+
+    padding: 104px 30px 0;
+
+    background: #fff;
 }
 
 .solutions-section h1 {
     font-size: 56px;
     font-weight: 400;
     text-align: center;
+    color: var(--h-color-neutral-900);
 }
 
 .solutions-section p {
     padding: 4px 12px;
-    border-radius: 999px;
-    background: #f2f2f2;
-}
 
-/* ---------------------------- */
+    border-radius: 999px;
+    background: var(--h-color-primary-200);
+}
 
 .solutions {
     width: 100%;
@@ -28,21 +30,22 @@
 
 .solutions-wrapper {
     position: relative;
-    background: white;
+
+    background: #fff;
 }
 
 .solution-row {
     position: sticky;
-    top: -40px;
-
+    top: 0px;
     z-index: 1;
-
-    background: white;
-    padding: 80px 80px;
 
     display: flex;
     align-items: center;
-    margin: 0px !important;
+
+    margin: 0 !important;
+    padding: 40px 80px;
+
+    background: #fff;
 
     --overlay-progress: 0;
 }
@@ -54,7 +57,6 @@
     inset: 0;
 
     pointer-events: none;
-
     opacity: var(--overlay-progress);
 
     background: linear-gradient(to top,
@@ -70,9 +72,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 600px;
+
     max-width: 600px;
     min-height: 400px;
+    height: 600px;
 
     .video-card {
         width: 100%;
@@ -82,48 +85,57 @@
 .content-card {
     padding-left: 80px;
 
-
-    background: white;
+    background: #fff;
 
     h2 {
-        font-size: 48px;
         margin-top: 16px;
-        color: var(--h-color-neutral-800);
+
+        font-size: 48px;
         font-weight: 400;
+        color: var(--h-color-neutral-800);
     }
 
     p {
+        margin: 16px 0 48px;
+
         font-size: 16px;
-        margin: 16px 0px 48px;
         line-height: 1.6;
-        color: var(--h-color-neutral-800);
         font-weight: 400;
+        color: var(--h-color-neutral-800);
     }
 
     span {
+        display: inline-block;
+
         padding: 4px 12px;
-        background: var(--h-color-neutral-100);
-        border-radius: 50px;
+
         font-size: 14px;
-        color: var(--h-color-neutral-950);
         font-weight: 400;
+
+        color: var(--h-color-neutral-950);
+        background: var(--h-color-neutral-100);
+        border-radius: 999px;
     }
 
     button {
-        width: 100%;
-        text-align: start;
-        color: var(--h-color-neutral-800);
-        border: none;
-        background-color: var(--h-color-neutral-0);
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        width: 100%;
+
+        border: none;
+        background: var(--h-color-neutral-0);
+
         font-size: 24px;
+        text-align: left;
+        color: var(--h-color-neutral-800);
+
         cursor: pointer;
     }
 
     .OpenLinkIcon {
-        transition: transform 200ms ease;
+        transition: transform .2s ease;
     }
 
     button:hover .OpenLinkIcon {
@@ -133,10 +145,11 @@
     .line {
         width: 100%;
         height: 1px;
-        background-color: var(--h-color-neutral-200);
-        margin: 10px 0px;
-    }
 
+        margin: 10px 0;
+
+        background: var(--h-color-neutral-200);
+    }
 }
 
 .row .container {
@@ -145,18 +158,14 @@
 }
 
 @media (max-width: 1400px) {
-    .content-card {
-        h2 {
-            br {
-                display: none;
-            }
-        }
+    .content-card h2 br {
+        display: none;
     }
 }
 
 @media (max-width: 1200px) {
     .solution-row {
-        padding: 0px 40px;
+        padding: 0 40px;
     }
 
     .content-card {
@@ -164,8 +173,7 @@
     }
 }
 
-@media (max-width:1050px) {
-
+@media (max-width: 1050px) {
     .solutions-wrapper {
         overflow: hidden;
     }
@@ -177,13 +185,10 @@
     .solution-row {
         position: relative;
         top: 0;
-
-        display: flex;
-        min-height: max-content;
-
-        padding: 40px 80px;
-
         z-index: 0;
+
+        min-height: max-content;
+        padding: 0px 80px 80px;
     }
 
     .solution-row::before {
@@ -204,19 +209,20 @@
     .container {
         width: 100%;
         max-width: 100%;
+
         padding-left: 0;
         padding-right: 0;
     }
 
     .col-md-5,
     .col-md-7 {
-        width: 100%;
-        max-width: 100%;
-        flex: 0 0 100%;
-
         display: flex;
         justify-content: center;
         align-items: center;
+        flex: 0 0 100%;
+
+        width: 100%;
+        max-width: 100%;
 
         padding-left: 0;
         padding-right: 0;
@@ -227,16 +233,16 @@
     }
 
     .image-card {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        min-height: auto;
-
-        margin-bottom: 0;
-
         display: flex;
         justify-content: center;
         align-items: center;
+
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        height: auto;
+
+        margin-bottom: 0;
 
         .video-card {
             width: 100%;
@@ -247,9 +253,10 @@
         video,
         iframe,
         img {
+            display: block;
+
             width: 100%;
             height: auto;
-            display: block;
         }
     }
 
@@ -263,22 +270,20 @@
     }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .row {
-        padding: 40px 16px;
+        padding: 80px 16px;
+    }
+
+    .solutions-section {
+        padding: 104px 16px 0;
     }
 
     .solutions-section h1 {
         font-size: 48px;
     }
 
-    .content-card {
-        h2 {
-            font-size: 36px;
-        }
-    }
-
-    .solutions-section {
-        padding: 104px 16px 0px;
+    .content-card h2 {
+        font-size: 36px;
     }
 }
