@@ -78,7 +78,7 @@ const statsOptions = {
     pagination: false,
     arrows: false,
     drag: false,
-    autoplay: false,
+    autoplay: true,
     speed: 280,
     trimSpace: false,
     breakpoints: {
@@ -92,7 +92,7 @@ const statsOptions = {
             perPage: 3,
             gap: '20px',
             pagination: true,
-            drag: false
+            drag: true
         },
         991: {
             perPage: 2,
@@ -176,7 +176,7 @@ const toggleItem = (columnIndex, itemIndex) => {
     </section>
 
     <section class="stats-section">
-        <div class="stats-container">
+        <div class="container">
             <div class="stats-grid">
                 <div v-for="stat in stats" :key="stat.label" class="stats-card">
                     <strong>{{ stat.value }}</strong>
