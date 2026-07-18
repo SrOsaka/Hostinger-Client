@@ -1,0 +1,11 @@
+.aitools-wrapper {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--h-color-neutral-0);
+    background-image: url(https://www.hostinger.com/cdn-cgi/imagedelivery/LqiWLm-3MGbYHtFuUbcBtA/fbc67e5f-0a86-49eb-c5a8-3c2327a89900/public);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}

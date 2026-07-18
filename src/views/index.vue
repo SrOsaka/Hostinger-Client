@@ -5,6 +5,7 @@
     import ReviewsSection from '@/components/ReviewsSection.vue';
     import SolutionsSection from '@/components/SolutionsSection.vue';
     import FeaturesSection from '@/components/FeaturesSection.vue';
+    import AiToolsSection from '@/components/AiToolsSection.vue';
 </script>
 
 <template>
@@ -14,4 +15,5 @@
     <ReviewsSection />
     <SolutionsSection />
     <FeaturesSection />
+    <AiToolsSection />
 </template>
