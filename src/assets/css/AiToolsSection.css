@@ -1,5 +1,4 @@
 .aitools-wrapper {
-    height: 100vh;
     padding: 0px;
     margin: 0px;
     background-color: var(--h-color-neutral-0);
@@ -7,5 +6,100 @@
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
+.aitools-tittle {
+    padding-top: 248px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        padding: 4px 12px;
+        background-color: var(--h-color-neutral-0);
+        border-radius: 50px;
+
+        color: var(--h-color-neutral-900);
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 80px;
+        color: var(--h-color-neutral-900);
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: var(--h-color-neutral-900);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    button {
+        padding: 12px 48px;
+        color: var(--h-color-neutral-0);
+        background-color: var(--h-color-primary-600);
+        border-radius: 8px;
+        border: none;
+        margin-top: 32px;
+        font-weight: 600;
+    }
+}
+
+.container-video-aitools {
+    padding: 80px;
+    background-color: var(--h-color-neutral-0);
+}
+
+.aitools-video-wrapper {
+    background-color: var(--h-color-neutral-0);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    video {
+        position: relative;
+        inset: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .video-control {
+        position: absolute;
+        right: 12px;
+        bottom: 12px;
+        z-index: 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 32px;
+        height: 32px;
+
+        border: 1px solid var(--h-color-light-a10);
+        border-radius: 50%;
+
+        background: var(--h-color-dark-a10);
+        backdrop-filter: blur(10px);
+
+        color: var(--h-color-neutral-0);
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .video-control:hover {
+        border-color: var(--h-color-neutral-0);
+    }
+
+    .video-control svg {
+        width: 16px;
+        height: 16px;
+        color: var(--h-color-neutral-0);
+    }
 }
